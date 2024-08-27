@@ -1,0 +1,27 @@
+{
+  "name": "packahe_manager",
+  "version": "0.0.1",
+  "description": "Aplicación de prueba de la clase de Web Plataforms",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "lint": "./node_modules/.bin/eslint index.js",
+    "dev":"supervisor index.js",
+    "sart":"index.js"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "demo",
+    "uach"
+  ],
+  "author": "Gerardo Esteban Jurado Carrera",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "8.57.0",
+    "log4js": "^6.9.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.3"
+  }
+}

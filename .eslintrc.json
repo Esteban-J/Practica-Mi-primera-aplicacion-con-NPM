@@ -1,0 +1,37 @@
+{
+    // This configuration extends the base ESLint recommended ruleset.
+    // It applies a set of rules that are commonly accepted as best practices.
+    "extends":"eslint:recommended",
+    
+    // This defines the environments that the code is expected to run in.
+    // It enables specific global variables that are predefined in these environments.
+    "env":{
+        // Enables ES6 (ECMAScript 2015+) syntax and features.
+        // This includes new globals like `Set`, `Map`, `Promise`, etc., and 
+        // new syntax like arrow functions, classes, and modules.
+        "es6":true,
+        
+        // Enables Node.js global variables and Node.js scoping.
+        // Useful for writing code that runs on a Node.js server.
+        "node":true
+    },
+    
+    // Specifies the ECMAScript version for the parser to use.
+    // Setting it to 2017 allows the parser to understand ECMAScript 2017 features,
+    // like async/await, trailing commas in function parameter lists, and more.
+    "parserOptions":{
+        "ecmaVersion":2017
+    },
+    
+    // Indicates that this is the root configuration file.
+    // ESLint will stop looking for further configurations in parent directories.
+    "root":true,
+    
+    // Custom rules configuration. Each rule is defined by its name and severity level.
+    // Severity levels: 0 - "off", 1 - "warn", 2 - "error".
+    "rules":{
+        // Enforces the camelCase naming convention for identifiers.
+        // It is set to "warn", so it will show a warning when the convention is not followed.
+        "camelcase":1
+    }
+}
